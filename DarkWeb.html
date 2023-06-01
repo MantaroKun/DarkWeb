@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <!--<link rel="stylesheet" href="filestyle.css">-->
+<style>
+      @font-face {
+        font-family: "Cloister Black";
+        src: local("Cloister Black"), url("C:\Users\caiov\AppData\Local\Microsoft\Windows\Fonts\CloisterBlack.ttf")  format("ttf");
+                    }
+            body{
+                background-color: black;
+                color: white;
+                font-size: x-large;
+                font-family: 'Cloister Black';
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                height: 100vh;
+                text-align: center;
+                flex-direction: column;
+            }
+        
+             .container2margin {
+                background-color: black;
+                font-family: "Cloister Black";
+                border: 2px solid white;
+                border-radius: 12px;
+                width: 800px;
+                height: 600px;
+            }
+            .container2margin h1{
+                color: white
+            }
+            .container2margin p {
+                color: white
+            }
+</style>
+</head>
+<body>
+    <div class= 'container2margin'>
+            <h1>Website Preto</h1>
+            <p> Seja sua própria cor </p>
+            <spam> Login</spam>
+            <input type="text" id="login"/>
+            <spam> Senha </spam>
+            <input type="password" id="senha"/>
+            <button type="submit" onclick="botaoSubmit()">
+                Entrar
+            </button>
+    </div>
+    <script src="script_login.js"></script>
+</body>
+</html>

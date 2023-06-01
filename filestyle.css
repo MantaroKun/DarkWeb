@@ -1,0 +1,74 @@
+
+            @font-face {
+        font-family: "Chomsky Regular";
+        src: local("Chomsky Regular"), url("C:\Users\caiov\AppData\Local\Microsoft\Windows\Fonts\Chomsky.otf")  format("opentype");
+                    }
+            body{
+                background-color: black;
+                color: white;
+                font-size: x-large;
+                font-family: 'Chomsky Regular';
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                height: 100vh;
+                text-align: center;
+                flex-direction: column;
+            }
+            
+
+            .container {
+                background-color: black(0, 0, 0);
+                padding:20px;
+                border-radius: 15px;
+            }
+
+            .container2margin {
+                font-family: "Chomsky Regular";
+                border: 2px solid white;
+                border-radius: 12px;
+                padding:18px;
+            }
+            .container2margin h1{
+                color: white
+            }
+            .container2margin p {
+                color: white
+            }
+            .divisoes{
+        background-color: rgb(202, 67, 67);
+        width: 165px;
+        height: auto;
+        border: 3px solid black;
+        border-radius: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+        float: left;
+        margin-right: 3px;       
+    }
+    .divisoes:hover{ cursor:pointer; color: white}
+    #Divisao1{
+        background-color: rgb(20, 150, 20);
+    }
+    #Divisao1:hover
+    {background-color: rgb(1, 41, 1);
+        color: white;
+    }
+    #Divisao2{
+        background-color: rgb(207, 207, 62);
+    }
+    #Divisao2:hover{
+        background-color: rgb(124, 124, 3);
+    }
+    #Divisao3:hover{
+        background-color: rgb(114, 0, 0);
+    }
+    #Central{
+        margin: auto;
+        height: auto;
+        width: 570px;
+        align-items: center;
+        justify-content: center ;
+    }   
+    *{text-align: center}
