@@ -65,9 +65,11 @@ body {
 
 .entrada {
     background-color: black;
-    width: 150px;
+    width: 250px;
     color: white;
     border-radius: 12px;
+    font-family: 'Chomsky Regular';
+
 }
 
 .botaoEntrar {

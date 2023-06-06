@@ -29,6 +29,7 @@
 
         .container2margin {
             background-color: rgba(0, 0, 0, 0.8);
+            margin-top: 15px;
             font-family: "Cloister Black";
             border: 2px solid white;
             border-radius: 12px;
@@ -38,19 +39,27 @@
         }
 
         .container2margin h1 {
+            margin-top: 30px;
             color: white
         }
 
         .container2margin p {
+            margin-bottom: 15px ;
+            margin-top: 7px;
             color: white
+        }
+        .container2margin form{
+            font-size: 30px;
+            margin-left: 20px;
         }
 
         .container3 {
             background-color: rgba(0, 0, 0, 0.8);
             border: 2px solid white;
             width: 800px;
-            height: 800px;
+            height: 1100px;
             margin-top: 10px;
+            margin-bottom: 15px;
             border-radius: 12px;
             padding-left: 50px;
             padding-right: 50px;
@@ -61,6 +70,10 @@
         .container3margin {
             border: 2px solid white
         }
+        .container3 h1{
+            margin-top:30px ;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -68,51 +81,55 @@
     <div class='container2margin'>
         <h1>Website Preto</h1>
         <p> Seja sua própria cor</p>
-        <form onsubmit="botaoSubmit()">
-            <spam> Login: </spam>
+        <form id="loginForm">
+            <spam class="login"> Login: </spam>
             <input type="text" id="login" class="entrada" />
-            <spam> Senha: </spam>
+            <spam class="senha"> Senha: </spam>
             <input type="password" id="senha" class="entrada" />
-            <button type="submit" class="botaoEntrar">
+            <button class="botaoEntrar">
                 Entrar
             </button>
         </form>
     </div>
     <div class='container3'>
         <h1>Cadastre-se</h1>
-        <form>
+        <form id="formCad" action="http://localhost:8000" method="post">
             <ul id="lista1">
                 <li>
                     <span>Nome: </span>
-                    <input type="text" id="nome" class="entrada" />
+                    <input type="text" id="nome" name="nome" class="entrada" />
                 </li>
                 <li>
                     <span>Sobrenome: </span>
-                    <input type="text" id="sobrenome" class="entrada" /><br />
+                    <input type="text" id="sobrenome" name="sobrenome" class="entrada" /><br/>
                 </li>
                 <li>
-                    <span>E-mail: </span>
-                    <input type="text" id="email" class="entrada" />
+                    <span>  E-mail: </span>
+                    <input type="text" id="email"  name="email" class="entrada" />
                 </li>
                 <li>
-                    <span> ( ͡° ͜ʖ ͡°):</span>
-                    <select class="entrada">
+                    <span> Sexo: </span>
+                    <select class="entrada" name="sexo">
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
                         <option value="outros">Outros</option>
-                        <option value="Prefiro não informar">Prefiro não informar</option>
+                        <option value="prefiro não informar">Prefiro não informar</option>
                     </select><br />
                 </li>
                 <li>
                     <span> Senha: </span>
-                    <input type="text" id="confirme" class="entrada" />
+                    <input type="text" id="senhaCad" name="senhaCad" class="entrada" />
                 </li>
                 <li>
                     <span> Confirme sua senha: </span>
-                    <input type="text" id="confirmesenha" class="entrada" />
+                    <input type="text" id="confirmesenha" name="confirmesenha" class="entrada" />
                 </li>
-
             </ul>
+            <button type="text" class="entrada">
+                Cadastre-se
+            </button>
+        </br>
+        </br>
         </form>
     </div>
 
