@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="filestyle.css">
+    <style>
+        @font-face {
+            font-family: "Cloister Black";
+            src: local("Cloister Black"), url("C:\Users\caiov\AppData\Local\Microsoft\Windows\Fonts\CloisterBlack.ttf") format("ttf");
+        }
+
+        body {
+            color: white;
+            font-size: x-large;
+            font-family: 'Cloister Black';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+            text-align: center;
+            flex-direction: column;
+            background-image: url("https://wallpapercrafter.com/desktop1/638607-abstract-damask-pattern-seamless-floral-decorative.jpg");
+        }
+
+        .container2margin {
+            background-color: rgba(0, 0, 0, 0.8);
+            margin-top: 15px;
+            font-family: "Cloister Black";
+            border: 2px solid white;
+            border-radius: 12px;
+            width: 900px;
+            height: 600px;
+            font-size: 20px;
+        }
+
+        .container2margin h1 {
+            margin-top: 30px;
+            color: white
+        }
+
+        .container2margin p {
+            margin-bottom: 15px ;
+            margin-top: 7px;
+            color: white
+        }
+        .container2margin form{
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        .container3 {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid white;
+            width: 800px;
+            height: 1100px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            border-radius: 12px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+
+
+        }
+
+        .container3margin {
+            border: 2px solid red
+        }
+        .container3 h1{
+            margin-top:30px ;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container2margin'>
+        <h1>Website Preto</h1>
+        <p> Seja sua própria cor</p>
+        <form id="loginForm">
+            <spam class="login"> Login: </spam>
+            <input type="text" id="login" class="entrada" />
+            <spam class="senha"> Senha: </spam>
+            <input type="password" id="senha" class="entrada" />
+            <button class="botaoEntrar">
+                Entrar
+            </button>
+        </form>
+    </div>
+    <div class='container3'>
+        <h1>Cadastre-se</h1>
+        <form id="formCad" action="http://localhost:8000" method="post">
+            <ul id="lista1">
+                <li>
+                    <span>Nome: </span>
+                    <input type="text" id="nome" name="nome" class="entrada" placeholder="Nome" required/>
+                </li>
+                <li>
+                    <span>Sobrenome: </span>
+                    <input type="text" id="sobrenome" name="sobrenome" class="entrada" placeholder="Sobrenome" required /><br/>
+                </li>
+                <li>
+                    <span>  E-mail: </span>
+                    <input type="text" id="email"  name="email" class="entrada"  placeholder="E-mail" required />
+                </li>
+                <li>
+                    <span> Sexo: </span>
+                    <select class="entrada" name="sexo">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros">Outros</option>
+                        <option value="prefiro não informar">Prefiro não informar</option>
+                    </select><br />
+                </li>
+                <li>
+                    <span> Senha: </span>
+                    <input type="text" id="senhaCad" name="senhaCad" class="entrada" placeholder="senhaCad" required/>
+                </li>
+                <li>
+                    <span> Confirme sua senha: </span>
+                    <input type="text" id="confirmesenha" name="confirmesenha" class="entrada" placeholder="Confirmesenha" required/>
+                </li>
+            </ul>
+            <button type="text" class="entrada">
+                Cadastre-se
+            </button>
+        </br>
+        </br>
+        </form>
+    </div>
+
+    </div>
+    <script src="script_login.js"></script>
+</body>
+
+</html>

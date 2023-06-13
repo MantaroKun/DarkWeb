@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semaforo</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95vh;
+        }
+        .caixa{
+            background-color: rgb(81, 81, 82);
+            width: 700px;
+            height: 270px;
+            margin: auto;
+            border-radius: 50px;
+        }
+     .divisoes{
+        background-color: rgb(202, 67, 67);
+        width: 165px;
+        height: auto;
+        border: 3px solid black;
+        border-radius: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+        float: left;
+        margin-right: 3px;       
+    }
+    .divisoes:hover{ cursor:pointer; color: white}
+    #Divisao1{
+        background-color: rgb(20, 150, 20);
+    }
+    #Divisao1:hover
+    {background-color: rgb(1, 41, 1);
+        color: white;
+    }
+    #Divisao2{
+        background-color: rgb(207, 207, 62);
+    }
+    #Divisao2:hover{
+        background-color: rgb(124, 124, 3);
+    }
+    #Divisao3:hover{
+        background-color: rgb(114, 0, 0);
+    }
+    #Central{
+        margin: auto;
+        height: auto;
+        width: 570px;
+        align-items: center;
+        justify-content: center ;
+    }   
+    *{text-align: center}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class = "caixa">
+            <div>
+                <h1 style="font-size: 50px; font-style: italic; margin: 0px;"
+                >Semáforo
+                </h1>
+            </div>
+                <p style="font-size: 30px; margin: 0px">
+                </p>
+            <div id= "Central">
+                <div class="divisoes" id="Divisao1">
+                    <id></id>
+                    <h1> Verde</h1>
+                        <h2> PROSSIGA</h2>
+                </div>
+                <div class="divisoes" id="Divisao2">
+                    <id></id>
+                    <h1> Amarelo</h1>
+                        <h2> ESPERE 
+                        </h2>
+                </div>
+                    <div class="divisoes" id="Divisao3">
+                    <id></id>
+                    <h1> Vermelho </h1>
+                        <h2> PARE</h2>
+                </div >
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        var botaoVerde = document.getElementById("Divisao1")
+            botaoVerde.addEventListener("click", exibirMensagemVerde)
+        var botaoAmarelo = document.getElementById("Divisao2")
+            botaoAmarelo.addEventListener("click", exibirMensagemAmarela)
+        var botaoVermelho = document.getElementById("Divisao3")
+            botaoVermelho.addEventListener("click", exibirMensagemVermelha)
+
+        function exibirMensagemVerde(){
+            var body= document.body
+            body.style.backgroundColor= "green"
+            //botaoVerde.style.visibility = "hidden"
+        }
+        function exibirMensagemAmarela(){
+            var body= document.body
+            body.style.backgroundColor= "yellow"
+        }
+        function exibirMensagemVermelha(){
+            var body= document.body
+            body.style.backgroundColor= "red"
+        }
+    </script>
+</body>
+</html>
