@@ -59,17 +59,16 @@
             width: 800px;
             height: 1100px;
             margin-top: 10px;
-            margin-bottom: 0px;
+            margin-bottom: 15px;
             border-radius: 12px;
             padding-left: 50px;
             padding-right: 50px;
 
 
-
         }
 
         .container3margin {
-            border: 2px solid red
+            border: 2px solid white
         }
         .container3 h1{
             margin-top:30px ;
@@ -94,23 +93,23 @@
     </div>
     <div class='container3'>
         <h1>Cadastre-se</h1>
-        <form id="formCad" action="http://localhost:8000" method="post">
+        <form id="formCad" >
             <ul id="lista1">
                 <li>
                     <span>Nome: </span>
-                    <input type="text" id="nome" name="nome" class="entrada" placeholder="Nome" required/>
+                    <input type="text" id="nome" name="nome" class="entrada" />
                 </li>
                 <li>
                     <span>Sobrenome: </span>
-                    <input type="text" id="sobrenome" name="sobrenome" class="entrada" placeholder="Sobrenome" required /><br/>
+                    <input type="text" id="sobrenome" name="sobrenome" class="entrada" /><br/>
                 </li>
                 <li>
                     <span>  E-mail: </span>
-                    <input type="text" id="email"  name="email" class="entrada"  placeholder="E-mail" required />
+                    <input type="text" id="email"  name="email" class="entrada" />
                 </li>
                 <li>
                     <span> Sexo: </span>
-                    <select class="entrada" name="sexo">
+                    <select class="entrada" id="sexo" name="sexo">
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
                         <option value="outros">Outros</option>
@@ -119,11 +118,11 @@
                 </li>
                 <li>
                     <span> Senha: </span>
-                    <input type="text" id="senhaCad" name="senhaCad" class="entrada" placeholder="senhaCad" required/>
+                    <input type="text" id="senhaCad" name="senhaCad" class="entrada" />
                 </li>
                 <li>
                     <span> Confirme sua senha: </span>
-                    <input type="text" id="confirmesenha" name="confirmesenha" class="entrada" placeholder="Confirmesenha" required/>
+                    <input type="text" id="confirmesenha" name="confirmesenha" class="entrada" />
                 </li>
             </ul>
             <button type="text" class="entrada">
